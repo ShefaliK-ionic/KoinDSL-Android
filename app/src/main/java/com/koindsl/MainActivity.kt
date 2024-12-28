@@ -13,5 +13,7 @@ private val component=Component()
         setContentView(R.layout.activity_main)
 //         engine.getEngine()////1.1 not proper way
         component.engine.getCar()
+        component.mainDemo.getDemo()
+//        component.mainDemo.getDemo()
     }
 }
