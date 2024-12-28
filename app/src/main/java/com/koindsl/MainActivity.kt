@@ -1,15 +1,17 @@
 package com.koindsl
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.koindsl.container.Component
 
 class MainActivity : AppCompatActivity() {
+    //1. not proper way
+//    private val engine:Engine by inject()
+private val component=Component()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+//         engine.getEngine()////1.1 not proper way
+        component.engine.getCar()
     }
 }

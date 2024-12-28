@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.koindsl"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.koindsl"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -45,4 +45,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+//    implementation ("org.koin:koin-android:3.2.0")
+//    implementation ("org.koin:koin-androidx-viewmodel:3.2.0")
+//    implementation ("org.koin:koin-androidx-scope:3.2.0")
+
+    implementation("io.insert-koin:koin-android:3.2.0")
+//    implementation ("io.insert-koin:koin-androidx-viewmodel:3.2.0")
 }
