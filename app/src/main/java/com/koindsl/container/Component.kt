@@ -3,6 +3,7 @@ package com.koindsl.container
 import com.koindsl.demo.Car
 import com.koindsl.demo.my_interface.MainDemo
 import com.koindsl.demo.viewmodel.MainViewmodel
+import com.koindsl.retrofit.retrofitYT.RetroViewmodel
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.get
 import org.koin.core.component.inject
@@ -16,4 +17,7 @@ class Component:KoinComponent {
 
  val mainDemo:MainDemo by inject()
     val viewmodel:MainViewmodel by inject()
+    val retroViewmodel: RetroViewmodel by inject()
+
+
 }

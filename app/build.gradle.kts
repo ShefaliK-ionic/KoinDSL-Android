@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.devtools.ksp").version("1.6.10-1.0.4") // Or latest version of KSP
+
 }
 
 android {
@@ -50,5 +52,11 @@ dependencies {
 //    implementation ("org.koin:koin-androidx-scope:3.2.0")
 
     implementation("io.insert-koin:koin-android:3.2.0")
+   implementation("com.squareup.retrofit2:retrofit:2.9.0")
+//    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.2")
+    implementation ("com.squareup.moshi:moshi:1.12.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
+
+    implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
 //    implementation ("io.insert-koin:koin-androidx-viewmodel:3.2.0")
 }

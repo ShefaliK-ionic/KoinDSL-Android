@@ -14,7 +14,9 @@ private val component=Component()
 //         engine.getEngine()////1.1 not proper way
 //        component.engine.getCar() //class
 //        component.mainDemo.getDemo()//interface
-        component.viewmodel.getTest()//viewmode
-//        component.mainDemo.getDemo()
+//        component.viewmodel.getTest()//viewmode
+
+//        retrofit
+        component.retroViewmodel.callApi()
     }
 }
