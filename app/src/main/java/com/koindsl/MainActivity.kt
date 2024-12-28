@@ -12,8 +12,9 @@ private val component=Component()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //         engine.getEngine()////1.1 not proper way
-        component.engine.getCar()
-        component.mainDemo.getDemo()
+//        component.engine.getCar() //class
+//        component.mainDemo.getDemo()//interface
+        component.viewmodel.getTest()//viewmode
 //        component.mainDemo.getDemo()
     }
 }
