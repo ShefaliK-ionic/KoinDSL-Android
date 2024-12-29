@@ -2,6 +2,7 @@ package com.koindsl.container
 
 import com.koindsl.demo.Car
 import com.koindsl.demo.my_interface.MainDemo
+import com.koindsl.demo.qualifier.UserModuleQualifier
 import com.koindsl.demo.roomKoin.RoomViewmodel
 import com.koindsl.demo.roomKoin.UserDao
 import com.koindsl.demo.viewmodel.MainViewmodel
@@ -22,5 +23,6 @@ class Component:KoinComponent {
     val retroViewmodel: RetroViewmodel by inject()
     val roomViewmodel: RoomViewmodel by inject()
     private val cityDao: UserDao by inject()
+     val userModuleQualifier: UserModuleQualifier by inject()
 
 }
