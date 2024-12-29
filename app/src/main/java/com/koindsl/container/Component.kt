@@ -1,5 +1,7 @@
 package com.koindsl.container
 
+import com.koindsl.RoomKoinWithViewModel.repository.DbRepository
+import com.koindsl.RoomKoinWithViewModel.viewmodel.RoomDbViewmodel
 import com.koindsl.demo.Car
 import com.koindsl.demo.my_interface.MainDemo
 import com.koindsl.demo.qualifier.UserModuleQualifier
@@ -24,5 +26,8 @@ class Component:KoinComponent {
     val roomViewmodel: RoomViewmodel by inject()
     private val cityDao: UserDao by inject()
      val userModuleQualifier: UserModuleQualifier by inject()
+
+    val roomDbViewmodel:RoomDbViewmodel by inject()
+    val repository:DbRepository by inject()
 
 }

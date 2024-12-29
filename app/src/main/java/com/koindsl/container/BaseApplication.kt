@@ -1,6 +1,7 @@
 package com.koindsl.container
 
 import android.app.Application
+import com.koindsl.RoomKoinWithViewModel.di.roomModuleMvvm
 import com.koindsl.demo.qualifier.userModule
 import com.koindsl.demo.roomKoin.di.roomModule
 import com.koindsl.demo.scope.myScopeModule
@@ -17,7 +18,7 @@ class BaseApplication: Application() {
         super.onCreate()
         startKoin {
             androidContext(this@BaseApplication)
-            modules(demoModule, interfaceModule, viewmodelModule, retrofitBuilderModule,roomModule,userModule,
+            modules(demoModule, interfaceModule, viewmodelModule, retrofitBuilderModule,roomModule,userModule,roomModuleMvvm,
                 myScopeModule)//need to specify modify which we need to use in our app
         }
 
