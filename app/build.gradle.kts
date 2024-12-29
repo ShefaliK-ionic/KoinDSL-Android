@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -58,5 +60,16 @@ dependencies {
     implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
 
     implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
-//    implementation ("io.insert-koin:koin-androidx-viewmodel:3.2.0")
+
+    val room_version = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
+
+//    implementation ("android.arch.persistence.room:runtime:1.1.1")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+
+
+
 }
+
+

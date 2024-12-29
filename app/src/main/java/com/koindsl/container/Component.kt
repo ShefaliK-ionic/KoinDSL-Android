@@ -2,6 +2,8 @@ package com.koindsl.container
 
 import com.koindsl.demo.Car
 import com.koindsl.demo.my_interface.MainDemo
+import com.koindsl.demo.roomKoin.RoomViewmodel
+import com.koindsl.demo.roomKoin.UserDao
 import com.koindsl.demo.viewmodel.MainViewmodel
 import com.koindsl.retrofit.retrofitYT.RetroViewmodel
 import org.koin.core.component.KoinComponent
@@ -18,6 +20,7 @@ class Component:KoinComponent {
  val mainDemo:MainDemo by inject()
     val viewmodel:MainViewmodel by inject()
     val retroViewmodel: RetroViewmodel by inject()
-
+    val roomViewmodel: RoomViewmodel by inject()
+    private val cityDao: UserDao by inject()
 
 }

@@ -18,5 +18,6 @@ private val component=Component()
 
 //        retrofit
         component.retroViewmodel.callApi()
+//        component.roomViewmodel.addRoomUser()
     }
 }
